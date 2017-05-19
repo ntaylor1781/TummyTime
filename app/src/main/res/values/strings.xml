@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tummy Time</string>
+    <string name="chronometer_start">Start</string>
+    <string name="chronometer_stop">Stop</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+</resources>

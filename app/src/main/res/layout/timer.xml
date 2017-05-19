@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer_">
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chronometer_start"
+        android:visibility="visible"
+        android:layout_below="@+id/btnDone"
+        android:layout_alignLeft="@+id/btnStop"
+        android:layout_alignStart="@+id/btnStop">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="@string/chronometer_stop"
+        android:visibility="visible">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_marginTop="11dp"
+        android:visibility="visible"
+        android:layout_below="@+id/btnStop"
+        android:layout_alignLeft="@+id/btnStop"
+        android:layout_alignStart="@+id/btnStop">
+
+    </Button>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/pView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
